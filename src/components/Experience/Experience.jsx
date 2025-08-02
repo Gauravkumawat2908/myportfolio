@@ -30,7 +30,6 @@ const Experience = () => {
               index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
             }`}
           >
-            
             {/* Content Section */}
             <div
               className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
@@ -41,14 +40,14 @@ const Experience = () => {
               <div className="flex items-center space-x-6">
                 {/* Company Logo/Image */}
                 <div className="w-20 h-30 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]">
-                  <img 
+                  <img
                     src={experience.img}
                     alt={experience.company}
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
 
-                {/* Role, Company Name, and Date */}
+                {/* Role, Company Name, Date, and Certificate */}
                 <div className="flex flex-col justify-between">
                   <div>
                     <h3 className="text-xl sm:text-2xl font-semibold text-white">
@@ -58,12 +57,30 @@ const Experience = () => {
                       {experience.company}
                     </h4>
                   </div>
-                  {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
+
+                  {/* Date */}
+                  <p className="text-sm text-gray-500 mt-2">
+                    {experience.date}
+                  </p>
+
+                  {/* Certificate Link */}
+                  {experience.certificate && (
+                    <a
+                      href={experience.certificate}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block mt-2 text-sm text-purple-400 hover:underline font-medium"
+                    >
+                      🎓 View Certificate
+                    </a>
+                  )}
                 </div>
               </div>
 
+              {/* Description */}
               <p className="mt-4 text-gray-400">{experience.desc}</p>
+
+              {/* Skills */}
               <div className="mt-4">
                 <h5 className="font-medium text-white">Skills:</h5>
                 <ul className="flex flex-wrap mt-2">

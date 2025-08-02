@@ -77,27 +77,27 @@ export const SkillsInfo = [
 ];
 
   export const experiences = [
-    {
-      id: 0,
-      img: webverseLogo,
-      role: "Fullstack Development (Virtual Intern)",
-      company: "Academy of Skill Development",
-      date: "May 2025 - July 2025",
-      desc: "Developed dynamic and scalable Car Rental Platform using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-      skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "Node JS",
-        "Tailwind CSS",
-        "MongoDb",
-        
-        
-      ],
-    },
-    
-  ];
+  {
+    id: 0,
+    img: webverseLogo,
+    role: "Fullstack Development (Virtual Intern)",
+    company: "Academy of Skill Development",
+    date: "May 2025 - July 2025",
+    desc: "Developed dynamic and scalable Car Rental Platform using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React JS",
+      "Node JS",
+      "Tailwind CSS",
+      "MongoDb",
+    ],
+  
+    certificate: "https://drive.google.com/file/d/15mxfczmf3D09LkAN0FqjYEGBknsktfLR/view?usp=sharing", // Replace with actual link
+  },
+];
+
   
   export const education = [
     
